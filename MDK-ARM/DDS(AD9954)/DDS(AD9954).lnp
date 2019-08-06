@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"dds(ad9954)\startup_stm32f103xb.o"
+"dds(ad9954)\dds9954.o"
+"dds(ad9954)\main.o"
+"dds(ad9954)\gpio.o"
+"dds(ad9954)\stm32f1xx_it.o"
+"dds(ad9954)\stm32f1xx_hal_msp.o"
+"dds(ad9954)\stm32f1xx_hal_gpio_ex.o"
+"dds(ad9954)\stm32f1xx_hal_tim.o"
+"dds(ad9954)\stm32f1xx_hal_tim_ex.o"
+"dds(ad9954)\stm32f1xx_hal.o"
+"dds(ad9954)\stm32f1xx_hal_rcc.o"
+"dds(ad9954)\stm32f1xx_hal_rcc_ex.o"
+"dds(ad9954)\stm32f1xx_hal_gpio.o"
+"dds(ad9954)\stm32f1xx_hal_dma.o"
+"dds(ad9954)\stm32f1xx_hal_cortex.o"
+"dds(ad9954)\stm32f1xx_hal_pwr.o"
+"dds(ad9954)\stm32f1xx_hal_flash.o"
+"dds(ad9954)\stm32f1xx_hal_flash_ex.o"
+"dds(ad9954)\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "DDS(AD9954)\DDS(AD9954).sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DDS(AD9954).map" -o DDS(AD9954)\DDS(AD9954).axf
